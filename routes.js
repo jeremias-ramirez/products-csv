@@ -7,7 +7,7 @@ module.exports = function (app) {
 
   console.log("Routes loaded");
 
-  app.get(constants.BASE_PATH, function (req, res) {
+  app.get(constants.BASE_PATH + "/", function (req, res) {
     res.status(200);
     res.send("inicio");
   });
