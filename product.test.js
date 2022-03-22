@@ -1,5 +1,5 @@
 const { parse } = require('json2csv');
-const { Product } = require("./Product.entity");
+const { Product } = require("./product/Product.entity");
 
 const productA = new Product("1234", "titulo", 100.20, "http://..product", "http://..image", "marca");
 productA.fbProductCategory = 234;

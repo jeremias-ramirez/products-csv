@@ -114,7 +114,7 @@ class Product {
     /**
      * @param {Product} product
      */
-    static getFacebookProduct(product) {
+    static toFacebookProduct(product) {
 
         const mapToFbProducto = (fbProduct, [key, value]) => {
             fbProduct[mappingProductToFacebookProduct[key]] = value;
