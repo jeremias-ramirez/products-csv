@@ -1,0 +1,24 @@
+{
+  "name": "testfacebookproducts",
+  "version": "1.0.0",
+  "description": "prueba de publicacion de documentacion en faceboo, con bussines-facebook",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.3.1",
+    "express-override": "^0.1.9",
+    "facebook-nodejs-business-sdk": "^12.0.1",
+    "fb": "^2.0.0",
+    "http": "0.0.1-security",
+    "json2csv": "^5.0.7",
+    "method-override": "^3.0.0"
+  }
+}
