@@ -21,7 +21,7 @@ module.exports = function (app) {
     */
   app.get(constants.BASE_PATH + '/products', function (req, res) {
 
-    const productA = new Product("1234", "titulo", 100.20, "http://..product", "http://..image", "marca");
+    const productA = new Product("1234", "titulo", "descripcion", 100.20, "http://..product", "http://..image", "marca");
     productA.fbProductCategory = 234;
 
     const fields = Product.getFacebookProductPropertyNames();

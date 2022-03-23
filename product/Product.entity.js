@@ -34,7 +34,7 @@ class Product {
      * @param {String} imageLink
      * @param {String} brand
      */
-    constructor(id, title, price, description, link, imageLink, brand) {
+    constructor(id, title, description, price, link, imageLink, brand) {
         this._id = id;
         this._title = title;
         this._description = description;
