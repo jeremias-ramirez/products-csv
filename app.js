@@ -19,6 +19,11 @@ app.use(cors({
 
 const port = process.env.PORT || 8080;
 
+app.use(express.static('./web', {
+    index: 'index.html',
+    maxAge: 86400000
+}));
+
 app.set('port', port);
 app.use(bodyParser.urlencoded({
     extended: true,
