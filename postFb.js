@@ -12,7 +12,7 @@ const bizSdk = require('facebook-nodejs-business-sdk');
 const Page = bizSdk.Page;
 const PagePost = bizSdk.PagePost;
 
-const access_token = "EAAt9IXog9d8BAIY2LjDTd5dcZBWmLRASO8kkxt6ZC8VWyVTZCPOkZCDAEDhsNwo5ZBiG5IaCUIzGKMNmpTag0mTqzjIkNqWJo9qaMregBIqbdGwGJZAUUDq0Q14Jd6U5CHuvY6bhVOo8ZALcfyD0b7Aw7ssKOmTJTKDxGHzZBPFRpjKOhgefO0TtUuEni2qQw0ARTOnoZCabnZAwZDZD";
+const access_token = "EAAt9IXog9d8BAFlCuU2QJKobqPCGpoEE5moeHCNjnxOYStfZBScVhDZBdiF8U7bF0sclf8NLhEh4GhCPZCGUz8IDp3gOKuumuj3Ctcz7C96mrkYChDHK0EPCqBpBd7qu4pTeBCKZBnXjzyqfCEE0XmlIhpSD5atIJx1hgHTXDHe5TckH4l7awOAmhkCzspDD1Ml927jDLgZDZD";
 const app_secret = '<APP_SECRET>';
 const app_id = '<APP_ID>';
 const id = "105694002075350";
@@ -33,7 +33,7 @@ let fields, params;
 fields = [
 ];
 params = {
-    'message': 'This is a test value',
+    'message': 'This is a test value2',
     "link": "https://products-csv.herokuapp.com/post1.html"
 };
 const feed = (new Page(id)).createFeed(
