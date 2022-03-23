@@ -34,9 +34,10 @@ class Product {
      * @param {String} imageLink
      * @param {String} brand
      */
-    constructor(id, tittle, price, link, imageLink, brand) {
+    constructor(id, title, price, description, link, imageLink, brand) {
         this._id = id;
-        this._tittle = tittle;
+        this._title = title;
+        this._description = description;
         this._price = price;
         this._link = link;
         this._imageLink = imageLink;
@@ -131,9 +132,10 @@ exports.Product = Product;
 const mappingProductToFacebookProduct = {
     //required
     _id: "id",
-    _tittle: "tittle",
-    _availability: "availability",
+    _title: "title",
+    _description: "description",
     _condition: "condition",
+    _availability: "availability",
     _price: "price",
     _link: "link",
     _imageLink: "image_link",
