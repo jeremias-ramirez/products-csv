@@ -20,8 +20,9 @@ module.exports = function (app) {
     *
     */
   app.get(constants.BASE_PATH + '/products', function (req, res) {
-
-    const productA = new Product("1234", "titulo", "descripcion", 100.20, "http://..product", "http://..image", "marca");
+    const link = "https://www.cotodigital3.com.ar/sitios/cdigi/producto/-aceite-girasol--canuelas---botella-900-ml/_/A-00050520-00050520-200";
+    const linkImage = "https://static.cotodigital3.com.ar/sitios/fotos/full/00050500/00050520.jpg?3.0.136a";
+    const productA = new Product("1234", "titulo", "descripcion", 100.20, link, linkImage, "marca");
     productA.fbProductCategory = 234;
 
     const fields = Product.getFacebookProductPropertyNames();
