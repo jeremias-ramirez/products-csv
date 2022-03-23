@@ -12,9 +12,11 @@ const bizSdk = require('facebook-nodejs-business-sdk');
 const Page = bizSdk.Page;
 const PagePost = bizSdk.PagePost;
 
-const access_token = "EAAt9IXog9d8BAFlCuU2QJKobqPCGpoEE5moeHCNjnxOYStfZBScVhDZBdiF8U7bF0sclf8NLhEh4GhCPZCGUz8IDp3gOKuumuj3Ctcz7C96mrkYChDHK0EPCqBpBd7qu4pTeBCKZBnXjzyqfCEE0XmlIhpSD5atIJx1hgHTXDHe5TckH4l7awOAmhkCzspDD1Ml927jDLgZDZD";
+const access_token = "EAAt9IXog9d8BAPDRrJcm1Q6yGsneLjY8JehZChRpNFZCi03st9RzAGFc76O8RNQqd53YOuMA6oE255kL7ZCbCJuYudRoeZBgmbZBmzT1PZBxtS55fioGdOPrtfvQz6R0Gcqs0GLNnN90HDAiasiDkTo1nLtkW5uKtH8vodcP3IdO9tW9iVjZBbb3k9EMPFHep1EmSkpe8OE0QZDZD";
+
 const app_secret = '<APP_SECRET>';
 const app_id = '<APP_ID>';
+
 const id = "105694002075350";
 const api = bizSdk.FacebookAdsApi.init(access_token);
 const showDebugingInfo = true; // Setting this to true shows more debugging info.
@@ -34,7 +36,7 @@ fields = [
 ];
 params = {
     'message': 'This is a test value2',
-    "link": "https://products-csv.herokuapp.com/post1.html"
+    "url": "https://products-csv.herokuapp.com/post1.html"
 };
 const feed = (new Page(id)).createFeed(
     fields,
