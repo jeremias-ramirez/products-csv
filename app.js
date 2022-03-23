@@ -17,7 +17,7 @@ app.use(cors({
     origin: '*'
 }));
 
-app.set('port', 1337);
+app.set('port', 8080);
 app.use(bodyParser.urlencoded({
     extended: true,
     uploadDir: '/tmp/'
