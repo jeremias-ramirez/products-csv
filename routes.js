@@ -20,13 +20,21 @@ module.exports = function (app) {
     *
     */
   app.get(constants.BASE_PATH + '/products', function (req, res) {
-    const link = "https://www.cotodigital3.com.ar/sitios/cdigi/producto/-aceite-girasol--canuelas---botella-900-ml/_/A-00050520-00050520-200";
-    const linkImage = "https://static.cotodigital3.com.ar/sitios/fotos/full/00050500/00050520.jpg?3.0.136a";
+    let link = "https://www.cotodigital3.com.ar/sitios/cdigi/producto/-aceite-girasol--canuelas---botella-900-ml/_/A-00050520-00050520-200";
+    let linkImage = "https://static.cotodigital3.com.ar/sitios/fotos/full/00050500/00050520.jpg?3.0.136a";
     const productA = new Product("1234abc", "titulo", "descripcion", 100.20, link, linkImage, "marca");
+
+    link = "https://www.cotodigital3.com.ar/sitios/cdigi/producto/-aceite-girasol--canuelas---botella-900-ml/_/A-00050520-00050520-200";
+    linkImage = "https://static.cotodigital3.com.ar/sitios/fotos/full/00050500/00050520.jpg?3.0.136a";
+    const productB = new Product("1235abc", "titulo2", "descripcion", 100.20, link, linkImage, "marca");
+
+    link = "https://www.cotodigital3.com.ar/sitios/cdigi/producto/-aceite-girasol--canuelas---botella-900-ml/_/A-00050520-00050520-200";
+    linkImage = "https://static.cotodigital3.com.ar/sitios/fotos/full/00050500/00050520.jpg?3.0.136a";
+    const productC = new Product("1236abc", "titulo3", "descripcion", 100.20, link, linkImage, "marca");
 
     const fields = Product.getFacebookProductPropertyNames();
     const opts = { fields };
-    const data = [productA].map(Product.toFacebookProduct);
+    const data = [productA, productB, productC].map(Product.toFacebookProduct);
 
     try {
       const csv = parse(data, opts);
