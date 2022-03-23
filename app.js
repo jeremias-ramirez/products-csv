@@ -17,7 +17,9 @@ app.use(cors({
     origin: '*'
 }));
 
-app.set('port', 8080);
+const port = process.env.PORT || 8080;
+
+app.set('port', port);
 app.use(bodyParser.urlencoded({
     extended: true,
     uploadDir: '/tmp/'
